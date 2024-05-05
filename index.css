@@ -1,0 +1,39 @@
+.container-animation {
+    width: 100px;
+    height: 100px;
+    animation-name: kub-run;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.44,.47,.6,.59);
+    background-color: red;
+    margin-left: 300px;
+    margin-top: 300px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kub-run {
+    0% {
+        background-color: red;
+        transform: translate(0);
+    }
+
+    25% {
+        background-color: blue;
+        transform: translateY(200px);
+    }
+
+    
+    50% {
+        background-color: green;
+        transform: translateX(200px);
+        transform: translateY(0px);
+    }
+
+    75% {
+        background-color: yellow;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateX(-200px);
+    }
+}
